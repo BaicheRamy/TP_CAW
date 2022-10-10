@@ -1,19 +1,19 @@
 var loser = false;
 var start = document.getElementById('start');
 var end = document.getElementById('end');
-var maze = document.getElementById('maze');
+var maze = document.querySelector('#maze');
 var mouseon = false;
+// document.querySelector('#maze').onmouseleave=outofdiv();
 
 window.onload = function() {
     start.onclick = startgame;
     end.onclick = overEnd;
+    maze.addEventListener("mouseleave", outofdiv());
     var boundaries = document.querySelectorAll('div.boundary');
     for (var i = 0; i < boundaries.length; i++) {
     boundaries[i].onmouseover = over;
-    boundaries[i].onmouseleave = over;
     }
-    
-  
+    console.log(maze);
 }
 
 
@@ -46,7 +46,7 @@ function overEnd() {
 }
 
 function outofdiv () {
-    mouseon=false;
+    over();
     console.log ('outtt');
  
 }
