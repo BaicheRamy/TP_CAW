@@ -1,14 +1,14 @@
 var loser = false;
 var start = document.getElementById('start');
 var end = document.getElementById('end');
-var maze = document.querySelector('#maze');
+//var maze = document.querySelector('#maze');
 var mouseon = false;
 // document.querySelector('#maze').onmouseleave=outofdiv();
 
 window.onload = function() {
     start.onclick = startgame;
     end.onclick = overEnd;
-    maze.addEventListener("mouseleave", outofdiv());
+    document.querySelector("#maze").parentNode.addEventListener("mouseleave", (e) => {outofdiv(); console.log('works');});
     var boundaries = document.querySelectorAll('div.boundary');
     for (var i = 0; i < boundaries.length; i++) {
     boundaries[i].onmouseover = over;
@@ -48,5 +48,4 @@ function overEnd() {
 function outofdiv () {
     over();
     console.log ('outtt');
- 
 }
