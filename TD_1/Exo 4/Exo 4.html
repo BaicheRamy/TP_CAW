@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div.container {
+            background: green;
+        }
+        
+        body div {
+            background: red;
+        }
+        
+        div.container#main {
+            background: purple;
+        }
+        
+        body #main {
+            background: magenta;
+        }
+        
+        .container {
+            background: blue;
+        }
+        
+        div {
+            background: yellow;
+            height: 200px;
+            width: 200px;
+        }
+        
+        body div.container#main {
+            background: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="main">
+        THIS IS A DIV!
+    </div>
+</body>
+
+</html>

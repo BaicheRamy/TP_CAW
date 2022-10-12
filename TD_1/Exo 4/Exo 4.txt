@@ -1,0 +1,23 @@
+1) Calculer la spécificité de chaque règle de style.
+
+- div.container: 
+= 1 + 10 = 11.
+
+- body div:
+= 1
+
+- div.container#main:
+= 1 + 10 + 100 = 111.
+
+- body #main:
+= 1 + 100 = 101.
+
+- .container:
+= 10 
+
+- div:
+= 1
+
+- body div.container#main:
+= 1 + 10 + 100 = 111.
+ 

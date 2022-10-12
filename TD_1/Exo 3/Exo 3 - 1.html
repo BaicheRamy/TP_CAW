@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice JS</title>
+
+    <style>
+        /* A - Sélectionner toutes les sections div et leur donner un Background de couleur
+pourpre (« purple ») */
+        
+        div {
+            background: purple;
+        }
+        /* B - Sélectionner toutes les sections div ayant la classe « highlight » et leur donner
+une largeur de 200px. */
+        
+        .highlight {
+            font-size: 200px;
+        }
+        /* C - Sélectionner la section div ayant pour identificateur « third » et lui donner une
+bordure de couleur orange. */
+        
+        #third {
+            border-style: solid;
+            border-width: medium;
+            border-color: orange;
+        }
+        /* D - Sélectionner uniquement la dernière section div et changer son background à «
+pink » */
+        /* !When I specifie the class using .highlight:nth-child(2) it doesn't work! */
+        
+         :nth-child(4) {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Div 1</div>
+    <div class="highlight">Div 2</div>
+    <div id="third">Div 3</div>
+    <div class="highlight">Div 4</div>
+</body>
+
+</html>

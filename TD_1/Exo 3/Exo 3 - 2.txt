@@ -1,0 +1,22 @@
+2) Calculer la spécificité de chaque sélecteur de la question 1) a..d
+
+Inline style = 1000.
+Id value = 100.
+Class value (or pseudo-class or attribute selectort)= 10.
+Element selector/pseudo-element = 1.
+
+Donc;
+a- Selectionner toutes les sections div:
+= 1.
+
+b- Toutes les section div ayant la class "highlight"
+= 1+10 = 11.
+
+c- La section div ayant pour l'id "third"
+= 1+100 = 101.
+
+d- la dernier section div (pseudo class)
+= 1+100 = 101.
+
+3) - //
+

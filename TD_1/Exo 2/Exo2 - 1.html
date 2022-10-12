@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo2-1</title>
+</head>
+
+<body>
+    <!-- Donner 4 méthodes d’accès différentes à la première et
+    la dernière balise <p> du document HTML -->
+    <h1>Je suis un h1
+        <h1>
+            <p id=“premier“ class=“special“> Hello </p>
+            <p class=“special“> Bye Bye</p>
+            <p> Hello encore </p>
+            <p id=“dernier“> Bye bye encore </p>
+
+
+
+            <script>
+                //1st method is to find an element by their Id
+                const first_m = document.getElementById("premier");
+                //2nd method is to find an element by their Class name
+                const second_m = document.getElementsByClassName("special");
+                //3rd method is to find an element by their Tag name
+                const third_m = document.getElementsByTagName("p");
+                //4th method is to find an element by their CSS Selector
+                const forth_m = document.querySelectorAll("p.dernier");
+            </script>
+</body>
+
+</html>

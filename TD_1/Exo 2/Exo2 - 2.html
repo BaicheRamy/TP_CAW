@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo2 - 2</title>
+</head>
+
+<body>
+
+    <p>
+        <strong>Nous</strong> avons introduit <strong>cette</strong> section pour l’utilisateur (<strong>débutant</strong> et intermédiaire) qui veulent travailler avec <strong>JavaScript</strong> pour le développement web <strong>front End</strong>.
+    </p>
+
+    <button onmouseover="bold()" onmouseout="normal()">Hover here</button>
+
+    <script>
+        var bold_items;
+
+        //to assure we get all the elements AFTER the window is loaded entirely.
+        window.onload = getBoldItems();
+
+        function getBoldItems() {
+            bold_items = document.getElementsByTagName("strong"); //returns array
+        }
+        //console.log(bold_items);
+
+        // To turn the bold items to RED.
+        function bold() {
+            for (let index = 0; index < bold_items.length; index++) {
+                bold_items[index].style.color = "red";
+            }
+        }
+
+        // To return the bold items to BLACK.
+        function normal() {
+            for (let index = 0; index < bold_items.length; index++) {
+                bold_items[index].style.color = "black";
+            }
+        }
+    </script>
+</body>
+
+</html>
